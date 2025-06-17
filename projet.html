@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>À propos</title>
+    <link rel="stylesheet" href="styles.css">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">JU5TU5 <span class="highlight">+ DEV</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="a propos.html" class="active">À propos</a></li>
+					<li><a href="projet.html">Projets</a></li>
+                    <li><a href="competence.html">Compétences</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+	<section id="mes-projets">
+            <h2>Mes Projets</h2>
+            <div class="projet-container">
+                <div class="projet-card">
+                    <h3>Audit de Sécurité Web</h3>
+                    <p>Analyse complète des vulnérabilités des applications web pour renforcer leur sécurité.</p>
+                   
+                    <img src="image1.jpg" alt="Audit de Sécurité Web">
+                    <button class="btn">Voir</button>
+                </div>
+                <div class="projet-card">
+                    <h3>Formation en Cybersécurité</h3>
+                    <p>Une plateforme interactive pour sensibiliser les utilisateurs aux menaces en ligne.</p>
+                    
+                    <img src="image2.jpg" alt="Portail de Formation">
+                    <button class="btn">Voir</button>
+                </div>
+                <div class="projet-card">
+                    <h3>Système de Détection </h3>
+                    <p>Développement d’un système pour surveiller et protéger les réseaux en temps réel.</p>
+           
+                    <img src="image3.jpg" alt="Système IDS">
+                    <button class="btn">Voir</button>
+                </div>
+				<div class="projet-card">
+                    <h3>Developement d'une plateforme digitale d'Etat Guinéen</h3>
+                    <p>Développement d’une base de donnée nationale pour le recensement de la population des citoyens.</p>
+                    
+                    <img src="image3.jpg" alt="Système IDS">
+                    <button class="btn">Voir</button>
+                </div>
+				<div class="projet-card">
+                    <h3>Developement d'une plateforme digitale d'Etat Guinéen</h3>
+                    <p>Développement d’une base de donnée nationale pour le recensement de la population des citoyens.</p>
+                    
+                    <img src="image3.jpg" alt="Système IDS">
+                    <button class="btn">Voir</button>
+                </div>
+				<div class="projet-card">
+                    <h3>Developement d'une plateforme digitale d'Etat Guinéen</h3>
+                    <p>Développement d’une base de donnée nationale pour le recensement de la population des citoyens.</p>
+                    
+                    <img src="image3.jpg" alt="Système IDS">
+                    <button class="btn">Voir</button>
+                </div>
+            </div>
+        </section>
+    </main>
+	<footer>
+        <p>&copy; Issiaga KALTAMBA: développeur web passionné de la conception web et design</p>
+    </footer>
+	<script>
+        // Animation pour le titre
+        gsap.from("#mes-projets h2", {
+            duration: 1,
+            y: -50,
+            opacity: 0,
+            ease: "power2.out"
+        });
+
+        // Animation pour chaque carte projet
+        gsap.from(".projet-card", {
+            duration: 1,
+            y: 50,
+            opacity: 0,
+            ease: "power2.out",
+            stagger: 0.2 // Décalage entre chaque bloc
+        });
+    </script>
+</body>
+</html>

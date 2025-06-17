@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>À propos</title>
+    <link rel="stylesheet" href="styles.css">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+</head>
+<body>
+   <header>
+        <div class="container">
+            <h1 class="logo">JU5TU5 <span class="highlight">+ DEV</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="a propos.html">À propos</a></li>
+					<li><a href="projet.html">Projets</a></li>
+                    <li><a href="competence.html">Compétences</a></li>
+                    <li><a href="contact.htlm">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+	<section class="contact-section">
+        <h1>Vous avez un <span class="highlight">projet en tête</span>?<br>N'hésitez pas à me <span class="highlight">contacter</span></h1>
+        <form class="contact-form">
+            <div class="form-group">
+                <div>
+                    <label for="prenom">Votre prénom</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="issiaga">
+                </div>
+                <div>
+                    <label for="nom">Votre nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="kaltamba">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="sujet">Votre sujet</label>
+                <input type="text" id="sujet" name="sujet" placeholder="Développement d'un site vitrine">
+            </div>
+            <div class="form-group">
+                <label for="message">Votre message</label>
+                <textarea id="message" name="message" placeholder="Écrivez votre message ici !"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Envoyer</button>
+        </form>
+    </section>
+	<footer>
+        <p>&copy; Issiaga KALTAMBA: développeur web passionné de la conception web et design</p>
+    </footer>
+	<script>
+    // Animation pour le titre
+    gsap.from(".contact-section h1", {
+        duration: 1,
+        y: -50,
+        opacity: 0,
+        ease: "power2.out"
+    });
+
+    // Animation pour chaque champ du formulaire
+    gsap.from(".form-group", {
+        duration: 1,
+        y: 50,
+        opacity: 0,
+        ease: "power2.out",
+        stagger: 0.3, 
+        delay: 0.5 
+    });
+
+    // Animation pour le bouton
+    gsap.from(".submit-btn", {
+        duration: 1,
+        scale: 0.8,
+        opacity: 0,
+        ease: "elastic.out(1, 0.5)",
+        delay: 1.5 
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>À propos</title>
+    <link rel="stylesheet" href="styles.css">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">JU5TU5 <span class="highlight">+ DEV</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="a propos.html" class="active">À propos</a></li>
+					<li><a href="projet.html">Projets</a></li>
+                    <li><a href="competence.html">Compétences</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="apropos">
+            <div class="texte">
+                <h2>À propos</h2>
+                <p>Je m’appelle <span class="highlight">Issiaga KALTAMBA</span>, passionné par la création de sites web modernes et interactifs.</p>
+                <p>Je suis actuellement Ingénieur en cybersécurité et développeur web, cherchant à améliorer mes compétences en JavaScript, HTML et CSS.</p>
+                <p>J’adore transformer mes idées en projets concrets et expérimenter avec les nouvelles technologies.</p>
+                <a href="CV.pdf" class="btn">Télécharger mon CV</a>
+            </div>
+            <div class="imagerond">
+                <img src="imagerond.jpg" alt="Photo de Issiaga KALTAMBA">
+            </div>
+        </section>
+    </main>
+	<footer>
+        <p>&copy; Issiaga KALTAMBA: développeur web passionné de la conception web et design</p>
+    </footer>
+	
+    <script>
+       
+        gsap.from(".texte h2", {
+            duration: 1,
+            y: -50,
+            opacity: 0,
+            ease: "power2.out"
+        });
+
+        gsap.from(".texte p", {
+            duration: 1,
+            x: -50,
+            opacity: 0,
+            ease: "power2.out",
+            stagger: 0.3 
+        });
+
+        gsap.from(".btn", {
+            duration: 1,
+            scale: 0.8,
+            opacity: 0,
+            ease: "back.out(1.7)"
+        });
+
+        gsap.from(".imagerond img", {
+            duration: 1.5,
+            x: 100,
+            opacity: 0,
+            ease: "elastic.out(1, 0.5)"
+        });
+    </script>
+</body>
+</html>

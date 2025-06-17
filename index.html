@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio KALTAMBA Issiaga </title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <header class="animate">
+        <div class="container">
+            <h1 class="logo">JU5TU5 <span class="highlight">+ DEV</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="a propos.html">À propos</a></li>
+					<li><a href="projet.html">Projets</a></li>
+                    <li><a href="competence.html">Compétences</a></li>
+                    <li><a href="contact.htlm">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="accueil">
+            <h2 class="animate">Je suis <span class="highlight">Issiaga KALTAMBA</span>,Ingénieur en Cybersécurité, passionné en 
+			développement et passionné par le web et le design !</h2>
+            <a href="projet.html" class="btn">Voir mes projets</a>
+            <div class="monimage">
+                <img src="monimage.jpg" alt="Illustration de développeurs">
+            </div>
+        </section>
+    </main>
+	<footer>
+        <p>&copy; Issiaga KALTAMBA: développeur web passionné de la conception web et design</p>
+    </footer>
+	<script>
+       
+        gsap.from(".animate", {
+            opacity: 0,         
+            y: 50,              
+            duration: 1.5,      
+            ease: "power3.out", 
+            stagger: 0.3        
+        });
+    </script>
+	<script>
+   
+        document.addEventListener("DOMContentLoaded", () => {
+            gsap.from(".btn", {
+                opacity: 0,           
+                y: 20,                
+                duration: 0.8,        
+                ease: "power2.out",   
+            });
+        });
+    </script>
+</body>
+</html>
